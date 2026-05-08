@@ -28,7 +28,7 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>24</java.version>
+		<java.version>21</java.version>
 		<testcontainers.version>1.19.8</testcontainers.version>
 	</properties>
 
@@ -102,7 +102,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.38</version>
+            <version>1.18.36</version>
             <scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -137,15 +137,14 @@
             <version>3.13.0</version>
 
             <configuration>
-                <release>24</release>
+                <source>21</source>
+                <target>21</target>
             </configuration>
         </plugin>
 
         <!-- Spring Boot Plugin -->
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
+        <plugin> <groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId> </plugin>
 
     </plugins>
 </build>

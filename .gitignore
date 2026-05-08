@@ -1,0 +1,97 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Build outputs
+**/target/
+**/build/
+
+# Keep Maven wrapper jar if you ever ignore *.jar
+!**/.mvn/wrapper/maven-wrapper.jar
+
+# Backend logs
+backend/logs/
+
+# Environment variables
+.env
+.env.local
+
+# Application properties with secrets (create application-local.properties for local dev)
+# application-prod.properties
+backend/src/main/resources/application-local.properties
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+/.pnp
+.pnp.js
+/coverage
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node (for React frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Local logs
+logs/

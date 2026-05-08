@@ -1,0 +1,6 @@
+# Note: this repository is a monorepo and the root .gitignore already covers
+# most backend artifacts. This file is intentionally minimal so that opening
+# `backend/` as a standalone workspace still ignores build outputs.
+
+target/
+logs/

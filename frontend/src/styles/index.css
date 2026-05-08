@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles to keep font/spacing consistent */
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  :root {
+    --color-primary: #0EA5A8;
+    --color-primary-dark: #0B7575;
+    --color-accent: #646CFF;
+    --color-surface: #FFFFFF;
+    --color-background: #F8FAFC;
+    --color-text: #0F172A;
+    --radius-lg: 12px;
+    --shadow-md: 0 6px 18px rgba(15, 23, 42, 0.08);
+  }
+
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+}
+
+/* Utility helpers using CSS variables for legacy rules */
+.site-bg { background-color: var(--color-background); }
+/* Auth card: the single white card shown on login/register pages */
+.auth-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* General card surface (used in-app) keeps subtle border and surface color */
+.card-surface {
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-lg);
+}
+
+/* simple container used across pages */
+.app-container {
+  @apply max-w-5xl mx-auto p-6;
+}
